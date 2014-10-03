@@ -41,7 +41,7 @@
 
  // output the appropriate result
  if ($b !== $c) {
-     echo "$b is not identical to $c\n";
+     echo "$b is not identical to '$c'\n";
  }
 
  ?>

@@ -23,19 +23,45 @@ $books = array(
     )
 );
 
-//#2 Construct a loop that iterates through each book and then each book's keys and values. 
-//Have it output the book's title, then list the key value pairs for the data about each book.
+var_dump($books);
 
-foreach ($books as $title => $stats){
+// //#2 Construct a loop that iterates through each book and then each book's keys and values. 
+// //Have it output the book's title, then list the key value pairs for the data about each book.
+
+// foreach ($books as $title => $stats){
         
+//         echo "Title: $title \n";
+
+//     foreach ($stats as $key => $value){
+
+//         echo "$key: $value\n" ;
+
+//         }
+//     echo "__________________\n";
+
+// }
+
+//Update your loop to only show books that were written after 1950.
+   
+    
+    foreach ($books as $title => $stats){
+         
+        if ($stats['published'] > 1950) {  
+
         echo "Title: $title \n";
 
-    foreach ($stats as $key => $value){
+            foreach ($stats as $key => $value){
 
-        echo "$key: $value\n" ;
+                echo "$key: $value\n" ;
 
+            }
+        
         }
+            
+        
+        
+
     echo "__________________\n";
 
-}
+    }
 

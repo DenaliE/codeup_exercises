@@ -1,6 +1,7 @@
 <?php
 
-//get input from user (word(s) to be tested)
+function isPalindrome(){
+	//get input from user (word(s) to be tested)
 echo "Please enter a word to see if it's a palindrome.  ";
 $input = trim(fgets(STDIN));
 
@@ -20,11 +21,14 @@ $reverse = strrev($lwrdInput);
 
 
 //test to see if they're the same
-if ($lwrdInput == $reverse){
-	echo "$input is a palindrome.";
+	if ($lwrdInput == $reverse){
+		echo "$input is a palindrome.";
+	}
+
+	else {
+		echo "$input is not a palindrome.";
+	}
 }
 
-else {
-	echo "$input is not a palindrome.";
-}
+echo isPalindrome();
 

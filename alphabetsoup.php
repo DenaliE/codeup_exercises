@@ -20,7 +20,7 @@
 
 // //convert back to string?
 // // $sorted = implode(glue, pieces)
-
+echo "Please enter words to sort.  ";
 $string = trim(fgets(STDIN));
 
 //use space as delimiter for words; create array.

@@ -15,6 +15,7 @@ foreach ($words as $word) {
 	$var = implode('', $var);
 
 	// construct a string with this operator:  .=
+	// add a space between words
 	echo $var .= " ";
 }
 
